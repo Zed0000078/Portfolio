@@ -5,6 +5,12 @@
     scroll-behavior: smooth;
 }
 
+*::-webkit-scrollbar{
+    display: none;
+}
+
+
+
 #main{
     color: white;
     box-sizing: border-box;
@@ -23,6 +29,11 @@
     height: 12vh;
     /* color: rgb(112, 88, 88); */
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:   black;
+    z-index: 10;
     justify-content: space-between;
 }
 
@@ -158,6 +169,11 @@
 
 .rcontent>img{
     margin-top: 100px;
+}
+
+.resume a {
+    text-decoration: none;
+    color: white;
 }
 
 #II-page{
@@ -442,8 +458,24 @@
     padding: 50px;
 }
 
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contact-inner p{
+    width: fit-content;
+}
+
+.contact-inner p:hover{
+    cursor: pointer;
+}
+
 .contact-inner h6{
-    padding-bottom: 20px    ;
+    padding-bottom: 20px;
 }
 
 .contact-inner i{
@@ -451,8 +483,8 @@
     background-color: rgb(103, 151, 151);
     color: black;
     border-radius: 50%;
-    padding: 2px;
-    animation: blink 1s steps(1, end) infinite;
+    padding: 3px;
+    /* animation: blink 1s steps(1, end) infinite;  */
 }
 
 .contact-inner i:hover{
@@ -461,7 +493,7 @@
     cursor: pointer;
 }
 
-@keyframes .contact-inner i{
+@keyframes blink{
     0%{
         opacity: 1;
     }
@@ -481,5 +513,4 @@
     border: 1px solid white;
     margin-top: 20px;
 }
-
-
+*/
