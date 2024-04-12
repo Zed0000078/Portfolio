@@ -1,5 +1,5 @@
 *{
-    font-family: poppins;
+    font-family: prompt;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -311,7 +311,7 @@
 }
 
 #IV-page>h1{
-    color: gray;
+    color: white;
     /* position: absolute; */
     text-align: center;
     
