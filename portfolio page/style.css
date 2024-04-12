@@ -180,7 +180,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(18, 7, 7);
+    background-color: #000e13;
     /* background-color: black; */
 }
 
@@ -305,7 +305,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(18, 7, 7);
+    background-color: #000e13;
     display: flex;
     /* justify-content: space-between; */
 }
