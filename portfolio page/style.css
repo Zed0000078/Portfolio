@@ -311,10 +311,13 @@
 }
 
 #IV-page>h1{
-    color: white;
-    /* position: absolute; */
+    color: #9ceaff;
+    position: absolute;
     text-align: center;
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;    
 }
 
 .card, .card2{
