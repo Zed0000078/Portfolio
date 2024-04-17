@@ -31,7 +31,6 @@ body::before {
   text-align: center;
   width: 100%;
   line-height: 100vh;
-  color: lightblue;
   position: absolute;
   font-size: 120px;
   font-weight: 900;
