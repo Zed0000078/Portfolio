@@ -28,6 +28,6 @@ wa.onclick = function(){
 
 res = document.querySelector(".resume")
 res.onclick = function(){
-    window.open('assets/MOHAMMAD-ZAID Resume.pdf')
+    window.open('assets/Mohammad Zaid Resume-p.pdf')
 }
 
