@@ -1,0 +1,122 @@
+@media screen and (max-width: 980px) {
+    nav {
+        width: calc(100% - 1rem);
+        top: 0.5rem;
+        margin-top: 0.5rem;
+
+        > .logo {
+            display: none;
+        }
+
+        > main {
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            > a {
+                padding: 0.55rem 0.62rem;
+                font-size: 0.78rem;
+            }
+        }
+    }
+
+    .hero {
+        margin-top: -5.2rem;
+        padding: 10rem 1.2rem 4rem;
+        grid-template-columns: 1fr;
+
+        &::before {
+            right: -18vw;
+            top: 18vh;
+            width: 88vw;
+            opacity: 0.38;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .hero__panel {
+        grid-template-columns: 1fr;
+
+        > div:hover {
+            transform: translateY(-6px);
+        }
+    }
+
+    .hero__stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about,
+    .contact-section,
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .skills__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .timeline > article {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+    }
+
+    .timeline__date {
+        padding-top: 0;
+    }
+
+    .education,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .skills,
+    .experience,
+    .projects,
+    .education,
+    .contact-section,
+    .services {
+        padding: 4rem 1.2rem;
+    }
+
+    .contact {
+        margin-top: -5.2rem;
+        padding: 9rem 1rem 4rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        > div {
+            align-items: center;
+
+            > h5 {
+                text-align: center;
+            }
+
+            > div {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .hero__panel,
+    .hero__stats {
+        grid-template-columns: 1fr;
+    }
+
+    .skills__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card__visual {
+        min-height: 18rem;
+    }
+}

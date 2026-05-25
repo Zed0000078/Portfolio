@@ -1,0 +1,53 @@
+@import "colors";
+
+footer {
+    width: min(1180px, calc(100% - 2rem));
+    margin: 0 auto 1rem;
+    padding: 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    border: 1px solid $line;
+    border-radius: 1.4rem;
+    background: rgba(246, 255, 248, 0.06);
+    color: $first;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+
+        > h1 {
+            font: 900 1.15rem $text2;
+        }
+
+        > p {
+            color: $muted;
+            font: 700 0.9rem $text1;
+        }
+
+        > h5 {
+            color: $third;
+            font: 800 0.9rem $text1;
+            text-align: right;
+        }
+
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+
+            > a {
+                color: $muted;
+                font: 800 0.9rem $text1;
+                transition: color 0.3s ease, transform 0.3s ease;
+
+                &:hover {
+                    color: $third;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+}
